@@ -40,7 +40,7 @@ app.use(express.json());
 AuthorizationRouter.routesConfig(app);
 UsersRouter.routesConfig(app);
 
-const server = app.listen(process.env.PORT, () => console.log(`Example app listening on port ${process.env.PORT}!`));
+const server = app.listen(process.env.PORT, () => console.log(`Estoy escuchando por el puerto ${process.env.PORT}!`));
 server.keepAliveTimeout = 120 * 1000;
 server.headersTimeout = 120 * 1000;
 
